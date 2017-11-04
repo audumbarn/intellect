@@ -4,10 +4,13 @@ This application consists of following packages:
 
 com.intellect.design
   -UserApplication.java --> SpringBootApplication
+  
 com.intellect.design.bean
   -User.java --> Pojo class for User
+  
 com.intellect.design.controller
   -UserController.java --> RestController of the app
+  
 com.intellect.design.service
   -UserService.java --> contains business logic
   -Response.java --> Response class pojo
