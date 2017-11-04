@@ -17,6 +17,7 @@ com.intellect.design.service
   -Error.java --> Error class
   
  This application can be accessed via http://url:port/UserApp/users
+ 
  There are 3 methods:
   POST: creates new user
   PUT: Updates existing user
@@ -26,4 +27,5 @@ com.intellect.design.service
  HashMap is used to hold all users. Key is the id of the User whereas User object is the value for the hashmap
  
  resources folder contains application.properties where server can be configured
+ 
  As of now server.port=8081
