@@ -16,7 +16,7 @@ com.intellect.design.service
   -Response.java --> Response class pojo
   -Error.java --> Error class
   
- This application can be accessed via http://url:port/UserApp/users
+ This application can be accessed via http://url:port/users
  
  There are 3 methods:
   POST: creates new user
