@@ -13,7 +13,9 @@ public class User {
 	private Date birthDate;
 	private boolean isActive;
 	
-	
+	public User() {
+		super();
+	}
 	public User(String fName, String lName, String email, int pinCode, Date birthDate, boolean isActive) {
 		
 		super();
@@ -67,4 +69,11 @@ public class User {
 	public void setActive(boolean isActive) {
 		this.isActive = isActive;
 	}
+	@Override
+	public String toString() {
+		return "User [id=" + id + ", fName=" + fName + ", lName=" + lName + ", email=" + email + ", pinCode=" + pinCode
+				+ ", birthDate=" + birthDate + ", isActive=" + isActive + "]";
+	}
+	
+	
 }

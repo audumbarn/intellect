@@ -52,6 +52,7 @@ public class UserService {
 			User newUser = new User(user.getfName(), user.getlName(), user.getEmail(), user.getPinCode(),user.getBirthDate(),true);
 			users.put(newUser.getId(), newUser);
 			response= new Response("New user added", newUser.getId(), null);
+			System.out.println("New user is:"+newUser.toString());
 		}
 		
 		
@@ -64,6 +65,7 @@ public class UserService {
 	public Response updateUser(User user){
 		Response response = new Response();
 		
+		System.out.println("user id:"+user.getId());
 		if(users.containsKey(user.getId())){
 			User current = users.get(user.getId());
 			

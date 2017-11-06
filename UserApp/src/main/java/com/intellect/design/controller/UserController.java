@@ -1,6 +1,7 @@
 package com.intellect.design.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,17 +18,18 @@ public class UserController {
 	private UserService userService;
 	
 	@RequestMapping(method=RequestMethod.POST, produces="Application/JSON")
-	public Response createUser(User user){
+	
+	public Response createUser(@RequestBody User user){
 		return userService.createUser(user);
 	}
 	
 	@RequestMapping(method=RequestMethod.PUT, produces="Application/JSON")
-	public Response updateUser(User user){
+	public Response updateUser(@RequestBody User user){
 		return userService.updateUser(user);
 	}
 	
 	@RequestMapping(method=RequestMethod.DELETE, produces="Application/JSON")
-	public Response deleteUser(User user){
+	public Response deleteUser(@RequestBody User user){
 		return userService.deleteUser(user);
 	}
 
